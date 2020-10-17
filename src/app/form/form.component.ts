@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
     comment: new FormControl('')
   });
 
-  viewRes : boolean = true;
+  viewRes : boolean = false;
 
   onSubmit() : void {
     this.formService.postVals(this.feedbackForm.value).subscribe(
