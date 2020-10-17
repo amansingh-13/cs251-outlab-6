@@ -1,0 +1,49 @@
+.big-container{
+    color: white;
+    margin: auto;
+    width: 50%;
+    padding: 20px 0;
+}
+
+.big-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.big-container .mat-form-field {
+  width: 220px;
+}
+
+.big-container form {
+  margin-bottom: 20px;
+}
+
+.big-container form > * {
+  margin: 5px 0;
+}
+
+.big-container .mat-radio-button {
+  margin: 0 12px;
+}
+
+.big-container .mat-button{
+  margin: 0 12px;
+}
+
+.bigger-bordered {
+  font-size: 110%;
+  background-color: green;
+  flex: 1 1 auto;
+}
+
+.vals {
+  color: white;
+  margin: auto;
+  padding: 5px;
+  width: 50%;
+  border: 2px solid purple;
+  border-radius: 5px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
