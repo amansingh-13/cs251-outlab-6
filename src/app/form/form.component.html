@@ -1,17 +1,17 @@
 <div class="big-container">  
   <form [formGroup]="feedbackForm">
     <mat-form-field appearance="outline" [floatLabel]="'Name'">
-      <mat-label>Name</mat-label>
+      <mat-label>Name*</mat-label>
       <input matInput formControlName="name">
     </mat-form-field>
     <br>
     <mat-form-field appearance="outline" [floatLabel]="'Email'">
-      <mat-label>Email</mat-label>
+      <mat-label>Email*</mat-label>
       <input matInput formControlName="email">
     </mat-form-field>
     <br>
     <div>
-      <label><b>Feedback : </b></label>
+      <label><b>Feedback</b>* :</label>
       <mat-radio-group formControlName="feedback">
         <mat-radio-button value="Great">Great</mat-radio-button>
         <mat-radio-button value="Okay">Okay</mat-radio-button>

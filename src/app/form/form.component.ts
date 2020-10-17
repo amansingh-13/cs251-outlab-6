@@ -13,7 +13,7 @@ export class FormComponent implements OnInit {
   feedbackForm = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
-    feedback: new FormControl(''),
+    feedback: new FormControl(null),
     comment: new FormControl('')
   });
 
@@ -21,7 +21,12 @@ export class FormComponent implements OnInit {
 
   onSubmit() : void {
     this.formService.postVals(this.feedbackForm.value).subscribe(
-      () => {this.feedbackForm.reset(); this.openBar('✅ Successfully submitted response')},
+      () => {
+        this.feedbackForm.reset({
+          name:'', email:'', feedback:null, comment:''
+        });
+        this.openBar('✅ Successfully submitted response')
+      },
       (res) => {
         let str : string = '❌ Unable to submit. Error in';
         for (let x in res.error) str += ' '+x+',';
